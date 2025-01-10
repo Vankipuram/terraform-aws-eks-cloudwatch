@@ -1,6 +1,7 @@
 variable "account_id" {
   type        = string
   description = "The AWS account ID"
+  default = "397209917077"
 }
 
 variable "oidc_host_path" {
@@ -10,6 +11,7 @@ variable "oidc_host_path" {
 variable "region" {
   type        = string
   description = "The AWS region to deploy to"
+  default = "us-east-1"
 }
 
 variable "enable_cloudwatch_agent" {
@@ -30,6 +32,7 @@ variable "fluentbit_full_log" {
 variable "eks_cluster_name" {
   type        = string
   description = "Name of the EKS cluster"
+  default = "test-eks"
 }
 
 variable "log_retention_in_days" {
